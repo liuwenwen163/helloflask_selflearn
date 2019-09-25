@@ -4,7 +4,8 @@ from flask import Flask
 app = Flask(__name__)
 
 
-# the minimal Flask application
-@app.route('/')
-def index():
-    return '<h1>Hello, World!</h1>'
+@app.route('/greet')
+@app.route('/greet/<name>')
+def index(name="programer"):
+    return '<h1>Hello, %s !</h1>' % name
+
