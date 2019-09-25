@@ -1,2 +1,0 @@
-FLASK_ENV=development
-FLASK_APP=01_hello_flask.py
